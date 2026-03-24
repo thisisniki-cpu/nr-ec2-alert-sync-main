@@ -1,0 +1,13 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is git-ignored — never commit real credentials.
+
+aws_region    = "us-east-1"
+project_name  = "nr-ec2-alert-sync"
+environment   = "prod"
+log_level     = "INFO"
+sync_schedule = "rate(1 hour)"
+
+# New Relic — used only for the initial bootstrap secret version.
+# Rotate via Secrets Manager afterwards; Terraform will not overwrite.
+nr_api_key    = "NRAK-XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+nr_account_id = "1234567"

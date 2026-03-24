@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Terraform
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+
+# Python
+__pycache__/
+*.py[cod]
+*.zip
+
+# Lambda build artifacts
+lambda/*.zip
